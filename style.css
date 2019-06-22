@@ -1,28 +1,47 @@
+html {
+  width: 100%;
+  max-width:1024px;
+  margin-right: auto;
+	margin-left: auto;
+}
 body {
-    font-size: 1.05em;
+  width: 100%;
+  max-width: 1024px;
+  
+  font-size: 1.05em;
   line-height: 1.25em;
   font-family: Helvetica Neue, Helvetica, Arial;
   background: #f9f9f9;
   color: #555;
 }
+ #logo img {
+   
+  /* border: 1px solid rgb(211, 211, 211); */
+}
 #logo {
     display: inline-block;
+    width: 30%;
+    height: 86px;
     position: absolute;
     z-index: 11;
+    background-color: white;
+
 }
 #logo a {
     text-align: center;
     display: inline-block;
-    margin-top: 30px;
-    margin-left: 30px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
 }
 header {
   background: #fff;
   width: 100%;
+  max-width: 1024px;
   height: 86px;
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
   border-bottom: 1px solid #ececec;
 }
 
@@ -43,7 +62,7 @@ ul {
 li {
   display: inline-block;
   /* float: left; */
-  padding: 10px
+  padding: 10px;
 }
 .active {
   font-weight: bold;
@@ -55,6 +74,33 @@ input {
 section {
   padding-top: 20px;
 }
+#socials {
+  padding-left: 25px;
+  padding-right: 10px;
+  display: inline-block;
+}
+#socials a {
+  border: 1px solid #aaa;
+  border-radius: 15px;
+  padding: 5px 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #aaa;
+}
+#socials a:nth-child(3) {
+  padding: 5px 7px;
+
+}
+/* #socials a:nth-child(1) {
+  color: #2e44c0;
+}
+#socials a:nth-child(2) {
+  color: aqua;
+}
+#socials a:nth-child(3) {
+  color: #00aeff;
+} */
+/* ----------------------- RESPONSIVE PART --------------*/
 @media only screen and (max-width : 640px) {
 header {
   position: absolute;
@@ -67,15 +113,17 @@ nav li {
   margin: 0;
   float: none;
 }
-
 /*Transitions*/
 .navi {
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
-
-.navi .main-content {
+#socials {
+  border-top: 1px solid #ececec;
+  padding-top: 15px;
+}
+.navi .menu {
   margin: 0px auto 0px auto;
   /* background: #fff; */
   /* border: 1px solid #444; */
@@ -98,8 +146,9 @@ nav li {
   display: inline-block;
   width: 70%;
   height: 86px;
-  background:url(menu32.png) center right no-repeat  #fff;
-  margin-right: 10px;
+  background:url(menu.png) center right no-repeat  #fff;
+  background-color: white;
+  /* margin-right: 10px; */
   position: absolute;
   right: 0;
   top: 0;
@@ -112,7 +161,7 @@ nav li {
   top: 2px;
 } */
 
-input#toggle:checked ~ .main-content {
-  top: -80px;
+input#toggle:checked ~ .menu {
+  top: -140px;
 }
 }
