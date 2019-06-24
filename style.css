@@ -2,12 +2,23 @@ html {
   width: 100%;
   max-width:1024px;
   margin-right: auto;
-	margin-left: auto;
+  margin-left: auto;
+}
+html:after { /*background opacity*/
+  content: "";
+  background: url(wall2.jpg) top center no-repeat #ececec;
+  background-size: 1920px 1920px;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 body {
   width: 100%;
-  max-width: 1024px;
-  
+  max-width: 1024px; /*probaj obrisi nakon unosa texta*/
   font-size: 1.05em;
   line-height: 1.25em;
   font-family: Helvetica Neue, Helvetica, Arial;
